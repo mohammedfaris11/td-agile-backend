@@ -1,9 +1,6 @@
 package com.eilco.td.domain;
-import lombok.Getter;
-
 import java.util.UUID;
 
-@Getter
 public class User {
 
     private final String userId;
@@ -28,6 +25,22 @@ public class User {
 
     public static User sanitizeUser(String userId, String name, String email, Gender gender){
         return new User(userId,name, email, gender);
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public Gender getGender() {
+        return gender;
     }
 
     private static String generateUserId(){
