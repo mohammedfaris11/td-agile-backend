@@ -12,7 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/user")
-@CrossOrigin(origins =  "http://localhost:4200")
+@CrossOrigin(origins =  "http://localhost:4200", "https://td-agile-frontend-611823307251.europe-west1.run.app/")
 @AllArgsConstructor
 public class UserController {
 
